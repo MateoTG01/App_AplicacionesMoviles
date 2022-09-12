@@ -1,25 +1,18 @@
 .splash{
-	position: fixed;
-	top: 0;
-	left: 0;
-	width: auto;
-	height: auto;
-	background: ghostwhite;
-	z-index: 200;
-	text-align:  center;
-	line-height: 90vh;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .splash.display-none{
-	position: fixed;
-	top: 0;
-	left: 0;
-	width: auto;
-	height: auto;
-	background: ghostwhite;
-	z-index: -10;
-	text-align:  center;
-	line-height: 90vh;
+  	position: absolute;
+  	top: 50%;
+ 	left: 50%;
+  	transform: translate(-50%, -50%);
+	background: white;
+	z-index: 200;
 	transition: all 0.5s;
 }
 
