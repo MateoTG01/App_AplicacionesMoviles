@@ -100,3 +100,12 @@ body{
   transform: rotate(-45deg);
   -webkit-transform: rotate(-45deg);
 }
+
+.aligned {
+    display: flex;
+    align-items: center;
+}
+          
+span {
+    padding: 10px;
+}
