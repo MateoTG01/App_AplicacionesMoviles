@@ -1,14 +1,16 @@
-.splash{
-	cursor: pointer;
-  	position: absolute;
-  	top: 50%;
-  	left: 50%;
-  	height:  95%;
-  	width: 95%;
-  	transform: translate(-50%, -50%);
-  	background-color: white;
-  	transition:  all ease-in-out 600ms;
-  	z-index: 200;
+html,
+body{
+	height: 100%;
+}
+
+body{
+	font-family: 'Roboto', sans-serif;
+	display: flex;
+	flex-direction: column;
+}
+
+.content {
+	flex: 1 0 auto;
 }
 
 .hidden{
@@ -17,37 +19,79 @@
 }
 
 .header img {
-	margin-top: 12px; 
 	display: block;
+	height: 100px;
+	width: 156px;
   	margin-left: auto;
   	margin-right: auto;
-  	width: 20%;
-  	height: 20%;
   	background: #555;
 }
 
-.botones {
-  	position: absolute;
-  	width: 100%;
+.grid {
+	display: grid;
+	grid-gap: 10px;
+	background-color: ghostwhite;
 }
 
-.botones img {
-  	width: 100%;
-  	height: auto;
+.grid .categoria {
+	display: flex;
+	flex-direction: column;
+	border: 1px #ccc solid;
+	padding: 10px;
+	box-shadow: 1px 1px 2px #ccc;
 }
 
-.botones .btn_exp {
-  	position: absolute;
-  	top: 50%;
-  	left: 50%;
-  	transform: translate(-50%, -50%);
-  	-ms-transform: translate(-50%, -50%);
-  	background-color: #555;
-  	color: white;
-  	font-size: 16px;
-  	padding: 12px 24px;
-  	border: none;
-  	cursor: pointer;
-  	border-radius: 5px;
+.grid .categoria img {
+	width: 150px;
+	text-align: right;
+	align-self: flex-end;
 }
 
+.footer-nav {
+	flex-shrink: 0;
+	background: #f4f4f4;
+	color: #444;
+	padding: 10px;
+	font-size: 14px;
+	margin-top: 10px;
+}
+
+.footer-nav ul {
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+}
+
+.footer-nav ul li {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.footer-nav ul li i {
+	font-size: 18px;
+}
+
+#splash {
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-color: white;
+	height: 100vh;
+	width: 100%;
+	z-index: 2;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	opacity: 1;
+	transition: opacity 1s;
+}
+
+#splash img {
+	width: 300px;
+}
+
+#splash.fade {
+	opacity: 0;
+}
