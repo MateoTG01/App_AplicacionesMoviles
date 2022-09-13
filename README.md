@@ -9,7 +9,7 @@ experiencia1.html
 Propósito de valor añadido para hospedaje. Imagen y texto representativo con información relevante de la empresa. Desde aquí se puede redireccionar a experiencias2.html
 
 experiencia2.html
-Continuación de experiencia1.html
+Continuación de experiencia1.html y se añade link con whatsapp para reserva de actividades
 
 historia.html
 Incluye información relevante del establecimiento para conectar más con el cliente
