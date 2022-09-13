@@ -95,3 +95,8 @@ body{
 #splash.fade {
 	opacity: 0;
 }
+
+.right {
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
