@@ -8,6 +8,7 @@
   	transform: translate(-50%, -50%);
   	background-color: white;
   	transition:  all ease-in-out 600ms;
+  	z-index: 200;
 }
 
 .hidden{
@@ -24,3 +25,29 @@
   	height: 20%;
   	background: #555;
 }
+
+.botones {
+  	position: absolute;
+  	width: 100%;
+}
+
+.botones img {
+  	width: 100%;
+  	height: auto;
+}
+
+.botones .btn_exp {
+  	position: absolute;
+  	top: 50%;
+  	left: 50%;
+  	transform: translate(-50%, -50%);
+  	-ms-transform: translate(-50%, -50%);
+  	background-color: #555;
+  	color: white;
+  	font-size: 16px;
+  	padding: 12px 24px;
+  	border: none;
+  	cursor: pointer;
+  	border-radius: 5px;
+}
+
